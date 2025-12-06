@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Format.css">
+        <style>
+        .container{
+        margin-top:10px;
+        width:60%;
+        height: 30%;
+        max-width:500px;
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 0 10px cyan, 0 0 20px cyan;
+        animation:fade 1s forwards ease;
+    }
+    @keyframes fade {
+        from{opacity:0; transform:translateY(10px);}
+        to{opacity:1; transform:translateY(0);} 
+    }
+    input,textarea{
+        width:75%;
+        padding:12px;
+        margin:10px 0;
+        border:2px solid #05999E;
+        border-radius:8px;
+        font-size:16px;
+        outline:none;
+    }
+
+    textarea{
+        height:120px;
+        resize:none;
+    }
+
+    button{
+        width:40%;
+        padding:12px;
+        background:#05999E;
+        color:white;
+        font-size:18px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        background:#046c70;
+    }
+        </style>
+    </head>
+    <body>
+        <div height="30%">
+            <center>
+            <div class="container">
+                <h2>⭐Get In Touch</h2>
+        
+                <form action="https://api.web3forms.com/submit" method="POST" name="sem2_contact">
+                    <input type="hidden" name="access_key" value="11a77e8e-d075-45a9-abb6-ffcd4ec46f74">
+        
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+        
+                    <textarea name="message" placeholder="Write your message..." required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </center>
+        </div>
+    </body>
+</html>

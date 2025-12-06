@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Format.css">
+        <style>
+            section{
+                width:90%;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                gap:20px;
+                margin:auto;
+            }
+            section a img{
+                border-radius: 50%;
+                height:3cm;
+                width:3cm;
+                border:1px solid #05999E;
+                box-shadow: 0 0 10px #05999E, 0 0 25px #09d2d9;
+                object-fit: cover;
+            }
+            section a{
+                display: flex;
+                align-items: center;
+                margin-left:2cm;
+            }
+            section a:hover span{
+                color:rgb(237, 235, 229);
+            }
+            /* ----------media--------- */
+            @media(max-width:600px){
+                section{
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <div>E1-Sem2</div>
+        </header>
+        <section> 
+        <div>
+            <a href="DM.html"> <img src="dm.png"> <span>&nbsp; Discrete Mathematics</span></a> <br>
+            <a href="MEFA.html"> <img src="mefa.png"><span> &nbsp; MEFA</span></a> <br>
+            <a href="EP.html"> <img src="py.png"> <span> &nbsp; Physics</span></a> <br>
+        </div>
+        <div class="right">
+             <a href="OOPS.html"> <img src="oop.png"> <span>&nbsp; Object Oriented Programming</span></a> <br>
+            <a href="DS.html"> <img src="ds.png"> <span>&nbsp; Data Structures</span></a> <br>
+            <a href="EVS.html"> <img src="evs.png">  <span>&nbsp; Environmental Science</span></a> <br>
+        </div>
+        </section>
+    </body>
+</html>
